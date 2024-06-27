@@ -3,7 +3,7 @@ on:
   push:
     branches: ["master"]
 jobs:
-  lint:
+  info:
     runs-on: ubuntu-latest
     steps:
       - name: Show info
