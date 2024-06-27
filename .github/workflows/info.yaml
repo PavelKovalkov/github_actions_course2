@@ -1,0 +1,10 @@
+name: Info
+on:
+  push:
+    branches: ["master"]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show info
+        run: echo "${{ toJSON(github) }}"
